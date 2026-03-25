@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grubgain | Save More Every Time You Dine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <span class="brand-mark">G</span>
+        <span>Grubgain</span>
+      </a>
+
+      <button
+        class="navbar-toggler border-0 shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#calculator">Savings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scan">Scan Bill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+          <li class="nav-item">
+            <a class="btn btn-accent rounded-pill px-4 d-none d-md-inline-flex" href="#calculator">Pay Bill</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section position-relative overflow-hidden">
+    <div class="hero-blur hero-blur-1"></div>
+    <div class="hero-blur hero-blur-2"></div>
+
+    <div class="container py-5">
+      <div class="row min-vh-100 align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge hero-badge rounded-pill px-3 py-2 mb-3">Smart dining rewards</span>
+          <h1 class="display-4 fw-bold hero-title mb-3">
+            Pay restaurant bills.
+            <span class="text-accent">Save instantly.</span>
+            Earn every time.
+          </h1>
+          <p class="lead text-muted mb-4 hero-copy">
+            Grubgain helps diners unlock instant savings, gift rewards, referrals,
+            and premium perks through one smooth mobile-first web experience.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#calculator" class="btn btn-accent btn-lg rounded-pill px-4">Try Savings</a>
+            <a href="#scan" class="btn btn-outline-dark btn-lg rounded-pill px-4">Scan a Bill</a>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-sm-4">
+              <div class="stat-card">
+                <h5 class="fw-bold mb-1">10%</h5>
+                <p class="mb-0 text-muted">Instant savings</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="stat-card">
+                <h5 class="fw-bold mb-1">1-click</h5>
+                <p class="mb-0 text-muted">Bill scanning</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="stat-card">
+                <h5 class="fw-bold mb-1">24/7</h5>
+                <p class="mb-0 text-muted">Rewards access</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-phone floating">
+            <div class="phone-card glass-card">
+              <div class="phone-top d-flex justify-content-between align-items-center mb-4">
+                <div>
+                  <p class="small text-muted mb-1">Current balance</p>
+                  <h3 class="fw-bold mb-0">₹2,480</h3>
+                </div>
+                <div class="reward-pill">+120 points</div>
+              </div>
+
+              <div class="mini-bill-card mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Bill Amount</span>
+                  <strong>₹2,000</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Savings</span>
+                  <strong class="text-success">- ₹200</strong>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>You Pay</span>
+                  <strong>₹1,800</strong>
+                </div>
+              </div>
+
+              <div class="phone-actions d-grid gap-2">
+                <button class="btn btn-accent rounded-pill">Pay Now</button>
+                <button class="btn btn-light rounded-pill border">Gift Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Features -->
+  <section id="features" class="py-5 section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-kicker">Core Features</span>
+        <h2 class="fw-bold section-title">A premium dining app experience on the web</h2>
+        <p class="text-muted mx-auto section-subtitle">
+          Clean UI, instant actions, and reward-led engagement built for mobile first.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="bento-box glass-card h-100">
+            <div class="feature-icon mb-3">📷</div>
+            <h4 class="fw-bold">Scan Bill</h4>
+            <p class="text-muted mb-0">
+              Upload or drag your restaurant bill and simulate instant scan-based checkout.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="bento-box glass-card h-100">
+            <div class="feature-icon mb-3">🎁</div>
+            <h4 class="fw-bold">Gift Gallery</h4>
+            <p class="text-muted mb-0">
+              Redeem points for curated rewards, dining vouchers, and festive gift options.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="bento-box glass-card h-100">
+            <div class="feature-icon mb-3">🤝</div>
+            <h4 class="fw-bold">Referral</h4>
+            <p class="text-muted mb-0">
+              Invite friends, unlock bonus rewards, and grow your savings every month.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="bento-box glass-card h-100">
+            <div class="feature-icon mb-3">⭐</div>
+            <h4 class="fw-bold">Prime Membership</h4>
+            <p class="text-muted mb-0">
+              Access priority offers, premium discounts, and exclusive member-only benefits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Savings Calculator -->
+  <section id="calculator" class="py-5 section-space bg-light-subtle">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <span class="section-kicker">Live Savings Calculator</span>
+          <h2 class="fw-bold section-title">See your instant restaurant savings</h2>
+          <p class="text-muted">
+            Move the slider to adjust your bill amount. Grubgain instantly calculates
+            your 10% savings and final payable amount.
+          </p>
+
+          <div class="calculator-card glass-card mt-4">
+            <label for="billRange" class="form-label fw-semibold">Bill Amount</label>
+            <input
+              id="billRange"
+              class="form-range"
+              type="range"
+              min="500"
+              max="10000"
+              step="100"
+              value="2500"
+            />
+
+            <div class="row g-3 mt-2">
+              <div class="col-md-4">
+                <div class="calc-box">
+                  <p class="small text-muted mb-1">Bill Amount</p>
+                  <h4 id="billAmount" class="fw-bold mb-0">₹2,500</h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="calc-box">
+                  <p class="small text-muted mb-1">You Pay</p>
+                  <h4 id="youPay" class="fw-bold mb-0">₹2,250</h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="calc-box">
+                  <p class="small text-muted mb-1">Instant Savings</p>
+                  <h4 id="savings" class="fw-bold mb-0 text-success">₹250</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="insight-card">
+            <h5 class="fw-bold mb-3">Why users love it</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3">✔ Instant value visible before payment</li>
+              <li class="mb-3">✔ Clean app-like interface for mobile users</li>
+              <li class="mb-3">✔ Rewards, gifting, and referrals in one flow</li>
+              <li class="mb-0">✔ Built for quick everyday restaurant payments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bill Dropzone -->
+  <section id="scan" class="py-5 section-space">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-kicker">Interactive Scan Demo</span>
+        <h2 class="fw-bold section-title">Drag and drop a restaurant bill</h2>
+        <p class="text-muted section-subtitle mx-auto">
+          This simulates Grubgain bill scanning with a shimmer state and success feedback.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div id="dropzone" class="dropzone text-center">
+            <div class="dropzone-inner">
+              <div class="drop-icon mb-3">🧾</div>
+              <h4 class="fw-bold mb-2">Drop your bill here</h4>
+              <p id="dropzoneText" class="text-muted mb-0">
+                Or drag any image/PDF file into this area to simulate scanning
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Cards -->
+  <section id="restaurants" class="py-5 section-space bg-light-subtle">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-kicker">Popular Experiences</span>
+        <h2 class="fw-bold section-title">Designed for every dining moment</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="restaurant-card hover-scale">
+            <div class="restaurant-visual visual-1"></div>
+            <div class="p-4">
+              <h5 class="fw-bold">Fine Dining</h5>
+              <p class="text-muted mb-0">Save instantly on premium dinner experiences.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="restaurant-card hover-scale">
+            <div class="restaurant-visual visual-2"></div>
+            <div class="p-4">
+              <h5 class="fw-bold">Family Restaurants</h5>
+              <p class="text-muted mb-0">Easy bill scanning and group-friendly savings.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="restaurant-card hover-scale">
+            <div class="restaurant-visual visual-3"></div>
+            <div class="p-4">
+              <h5 class="fw-bold">Cafes</h5>
+              <p class="text-muted mb-0">Quick checkout for everyday meals and coffee runs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="restaurant-card hover-scale">
+            <div class="restaurant-visual visual-4"></div>
+            <div class="p-4">
+              <h5 class="fw-bold">Quick Service</h5>
+              <p class="text-muted mb-0">Fast rewards and frictionless payment flow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cta-box text-center">
+        <span class="section-kicker">Get Started</span>
+        <h2 class="fw-bold section-title mb-3">Turn every meal into savings</h2>
+        <p class="text-muted mb-4">
+          Experience faster bill payments, rewards, referrals, and premium perks with Grubgain.
+        </p>
+        <a href="#calculator" class="btn btn-accent btn-lg rounded-pill px-5">Pay Bill</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Bottom Button -->
+  <div class="mobile-paybar d-md-none">
+    <a href="#calculator" class="btn btn-accent w-100 rounded-pill py-3 fw-semibold">Pay Bill</a>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>
